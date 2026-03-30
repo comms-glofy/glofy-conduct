@@ -8,143 +8,170 @@
   <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/comms-glofy/glofy-assets/refs/heads/main/favicon.png">
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-  <style>
-    body {
-      font-family: 'Plus Jakarta Sans', sans-serif;
-      margin: 0;
-      background: #ffffff;
-      color: #1a1a1a;
-    }
+<style>
+  body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    margin: 0;
+    background: #ffffff;
+    color: #1a1a1a;
+  }
 
-    header {
-      border-bottom: 1px solid #eaeaea;
-      padding: 20px;
-    }
+  html {
+    scroll-behavior: smooth;
+  }
 
-    .header-inner {
-      max-width: 760px;
-      margin: 0 auto;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
+  * {
+    box-sizing: border-box;
+  }
 
-.logo img {
-  height: 22px;
-  display: block;
-}
+  img {
+    max-width: 100%;
+  }
 
-.lang-btn {
-  font-size: 13px;
-  color: #666;
-  cursor: pointer;
-  background: none;
-  border: none;
-  padding: 0;
-  font-family: inherit;
-  transition: color 0.2s ease, opacity 0.2s ease;
-}
-
-.lang-btn:hover {
-  color: #111;
-}
-
-.lang-btn:focus-visible {
-  outline: 2px solid #111;
-  outline-offset: 4px;
-}
-
-    .container {
-      max-width: 760px;
-      margin: 0 auto;
-      padding: 56px 20px 72px;
-    }
-
-h1 {
-  font-size: 38px;
-  line-height: 1.15;
-  margin: 0 0 10px;
-  font-weight: 600;
-  letter-spacing: -0.02em;
-}
-
-h2 {
-  font-size: 24px;
-  line-height: 1.2;
-  margin: 42px 0 16px;
-  font-weight: 600;
-  letter-spacing: -0.02em;
-}
-
-h3 {
-  font-size: 18px;
-  line-height: 1.35;
-  margin: 28px 0 10px;
-  font-weight: 600;
-}
-
-p {
-  line-height: 1.8;
-  color: #333;
-  margin: 0 0 16px;
-}
-
-ul {
-  padding-left: 22px;
-  margin: 0 0 16px;
-}
-
-li {
-  margin-bottom: 10px;
-  line-height: 1.8;
-  color: #333;
-}
-
-
-    .meta { font-size: 13px; color: #888; margin-bottom: 36px; }
-
-footer {
-  border-top: 1px solid #eaeaea;
-  margin-top: 64px;
-  padding-top: 20px;
-  font-size: 13px;
-  color: #777;
-}
-
-    .lang-content { display: none; }
-    .lang-content.active { display: block; }
-
-    @media (max-width: 640px) {
   header {
-    padding: 16px 18px;
+    border-bottom: 1px solid #eaeaea;
+    padding: 20px;
+    background: #fff;
+  }
+
+  .header-inner {
+    max-width: 760px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .logo img {
+    height: 22px;
+    display: block;
+  }
+
+  .logo a {
+    display: inline-block;
+  }
+
+  .logo a:hover {
+    opacity: 0.7;
+  }
+
+  .lang-btn {
+    font-size: 13px;
+    color: #666;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0;
+    font-family: inherit;
+    transition: color 0.2s ease, opacity 0.2s ease;
+  }
+
+  .lang-btn:hover {
+    color: #111;
+  }
+
+  .lang-btn:focus-visible {
+    outline: 2px solid #111;
+    outline-offset: 4px;
   }
 
   .container {
-    padding: 40px 18px 64px;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 56px 20px 72px;
   }
 
   h1 {
-    font-size: 30px;
+    font-size: 38px;
+    line-height: 1.15;
+    margin: 0 0 10px;
+    font-weight: 600;
+    letter-spacing: -0.02em;
   }
 
   h2 {
-    font-size: 22px;
-    margin-top: 36px;
+    font-size: 24px;
+    line-height: 1.2;
+    margin: 42px 0 16px;
+    font-weight: 600;
+    letter-spacing: -0.02em;
   }
 
   h3 {
-    font-size: 17px;
+    font-size: 18px;
+    line-height: 1.35;
+    margin: 28px 0 10px;
+    font-weight: 600;
   }
 
-  p,
+  p {
+    line-height: 1.8;
+    color: #333;
+    margin: 0 0 16px;
+  }
+
+  ul {
+    padding-left: 22px;
+    margin: 0 0 16px;
+  }
+
   li {
-    font-size: 15px;
+    margin-bottom: 10px;
+    line-height: 1.8;
+    color: #333;
   }
 
-img {
-  max-width: 100%;
-}
-  </style>
+  .meta {
+    font-size: 13px;
+    color: #888;
+    margin-bottom: 36px;
+  }
+
+  footer {
+    border-top: 1px solid #eaeaea;
+    margin-top: 64px;
+    padding-top: 20px;
+    font-size: 13px;
+    color: #777;
+  }
+
+  .lang-content {
+    display: none;
+  }
+
+  .lang-content.active {
+    display: block;
+  }
+
+  @media (max-width: 640px) {
+    header {
+      padding: 16px 18px;
+    }
+
+    .container {
+      padding: 40px 18px 64px;
+    }
+
+    h1 {
+      font-size: 30px;
+    }
+
+    h2 {
+      font-size: 22px;
+      margin-top: 36px;
+    }
+
+    h3 {
+      font-size: 17px;
+    }
+
+    p,
+    li {
+      font-size: 15px;
+    }
+  }
+</style>
 </head>
 
 <body>
@@ -152,7 +179,9 @@ img {
 <header>
   <div class="header-inner">
     <div class="logo">
-      <img src="https://raw.githubusercontent.com/comms-glofy/glofy-assets/480d12d530cf73dbd292c6670c8191f1f15539ea/Rebranding%20Logo_Isologo%20Negro.svg">
+      <a href="https://glofy.co" target="_blank" rel="noopener noreferrer">
+        <img src="https://raw.githubusercontent.com/comms-glofy/glofy-assets/480d12d530cf73dbd292c6670c8191f1f15539ea/Rebranding%20Logo_Isologo%20Negro.svg" alt="Glofy">
+      </a>
     </div>
 
     <button class="lang-btn" id="langToggle">EN</button>
